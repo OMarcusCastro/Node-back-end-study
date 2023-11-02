@@ -1,0 +1,39 @@
+# Projeto de Api's
+
+## Tecnologia 
+
+- Fastify
+  -  microframe work mais perfomatico que express
+  -  Integracao direta com TS
+  -  Comunidade mais solida
+  -  Perfomatico com o async e await
+- Ts
+  - Linguagem altamente tipada 
+  - Evita erros em desenvolvimento
+
+## Manipulando o Ts
+
+- Baixar como uma dependencia de desenvolvimento. Js nao tem como padrao.
+  - `$ npm i -D typescript`
+- Configs do Ts
+  - `$ npx tsc --init` 
+  - Modificar o Target : `"target": "es2020",`
+
+## Criando a aplicação
+
+- Instalando fastify na raiz do projeto: `$npm i fastify`
+- Testando o [server.ts](src/server.ts)
+  - Converter para Js: `$ npx tsc src/server.ts`
+    -  Obs: Isso não é performatico pois converter toda hora é ruim no desenvolvimento. Teremos solução para isso.
+   - Se aparecer erros, baixe o pacote para o node
+     - `$ npm install -D @types/node`
+     - Apague o **js** gerado e faca novamente `$ npx tsc src/server.ts`
+       - Note que o erro sumirá
+  - Execute com `$ node src/server.js`
+  - Abra no navegador em 127.0.0.1/3333
+  - Para nao ter que ficar convertendo manualmente e sujar a pasta nos podemos baixar a dependencia **tsx**
+    - `$ npm install tsx -D`
+  - Para executar direto do Ts sem conversão
+    - `$ npm tsx src/server.ts`
+  - OBS: Em produção é melhor converter para **JS** pois é muito mais rapido rodar dele do que rodar sempre convertendo o **TS**
+  - Nos Scripts de Package.json: `"dev":"tsx watch src/server.ts"`
