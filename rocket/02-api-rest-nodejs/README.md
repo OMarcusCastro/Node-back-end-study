@@ -37,3 +37,26 @@
     - `$ npm tsx src/server.ts`
   - OBS: Em produção é melhor converter para **JS** pois é muito mais rapido rodar dele do que rodar sempre convertendo o **TS**
   - Nos Scripts de Package.json: `"dev":"tsx watch src/server.ts"`
+
+## Configurando Padroes: **ESlint**
+
+- Ferramenta que padroniza a sintaxe de um porjeto em Js
+- `$ npm i eslint @rocketseat/eslint-config -D`
+- Para configurar:
+  - criar na raiz : **.eslintrc.json**
+- Em user settings json do Vscode:
+  ```JSON
+    "editor.codeActionsOnSave" : {
+        "source.fixAll.eslint":true
+    }
+  ```
+- No package.json
+  ```JSON
+    "lint":"eslint src -ext .ts --fix"
+  ```
+## Configurando o Knex
+
+- Query builder que simplifica as requisões
+- `$ npm install knex`
+- `$ npm install sqlite3`
+- criar pasta temp
