@@ -12,7 +12,7 @@
   - Evita erros em desenvolvimento
 
 ## Manipulando o Ts
-
+- `$ npm init -y`
 - Baixar como uma dependencia de desenvolvimento. Js nao tem como padrao.
   - `$ npm i -D typescript`
 - Configs do Ts
