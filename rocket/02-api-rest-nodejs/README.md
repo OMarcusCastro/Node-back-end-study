@@ -30,11 +30,11 @@
      - Apague o **js** gerado e faca novamente `$ npx tsc src/server.ts`
        - Note que o erro sumirá
   - Execute com `$ node src/server.js`
-  - Abra no navegador em 127.0.0.1/3333
+  - Abra no navegador em 127.0.0.1:3333/hello
   - Para nao ter que ficar convertendo manualmente e sujar a pasta nos podemos baixar a dependencia **tsx**
     - `$ npm install tsx -D`
   - Para executar direto do Ts sem conversão
-    - `$ npm tsx src/server.ts`
+    - `$ npx tsx src/server.ts`
   - OBS: Em produção é melhor converter para **JS** pois é muito mais rapido rodar dele do que rodar sempre convertendo o **TS**
   - Nos Scripts de Package.json: `"dev":"tsx watch src/server.ts"`
 
