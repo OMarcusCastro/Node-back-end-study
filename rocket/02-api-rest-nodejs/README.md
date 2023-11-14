@@ -60,3 +60,5 @@
 - `$ npm install knex`
 - `$ npm install sqlite3`
 - criar pasta temp
+- `npx knex migrate:make create-documents`
+- na raiz: criar knexfile.ts
