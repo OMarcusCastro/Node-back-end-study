@@ -60,5 +60,14 @@
 - `$ npm install knex`
 - `$ npm install sqlite3`
 - criar pasta temp
-- `npx knex migrate:make create-documents`
 - na raiz: criar knexfile.ts
+
+### Criando Migrations
+
+- Serve para controle de versao
+- Uma fez feita nao deve ser desfeita
+- Historico de mudancas no banco 
+- `npx knex -h`
+- `npx knex migrate:make create-documents`: Criando uma nova tabela do banco
+- No package.json: `"knex":"node --loader tsx ./node_modules/.bin/knex"`
+- Rodar npm run knex -- -h
